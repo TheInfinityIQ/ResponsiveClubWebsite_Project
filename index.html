@@ -1,66 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>MoSelf</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <nav>
-        <section>logo</section>
-        <section>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#join">Join</a>
-            <a href="#schedule"></a>
-        </section>
-    </nav>
-    <header id="home">
-        <section class="banner">
-            <h1>MoSelf</h1>
-            <p>Motivate Yourself</p>
-        </section>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet turpis erat. Aenean est dolor, mattis nec neque id, consequat venenatis sapien. Proin sodales erat nec augue venenatis pellentesque. Cras non dapibus nisi. Nunc in ultricies mauris. Etiam massa purus, tincidunt vitae commodo sed, lacinia vitae quam. Curabitur sed tincidunt tellus, vitae suscipit eros. 
-            </p>
-            <h2>Why Join MoSelf?</h2>
-            <figure>
-                <img src="images/Stopwatch_LessBorder.svg" alt="">
-                <figcaption>Stay on Track</figcaption>
-            </figure>
-            <figure>
-                <img src="" alt="">
-                <figcaption>Achieve Your Goals</figcaption>
-            </figure>
-            <figure>
-                <img src="" alt="">
-                <figcaption>Never Lose Focus</figcaption>
-            </figure>
-        </section>
-        <section id="join">
-            <h2>Join Us</h2>
-            <p>Username</p>
-            <div class="input-text-field"></div>
-            <p>Email</p>
-            <div class="input-text-field"></div>
-            <p>Password</p>
-            <div class="input-text-field"></div>
-        </section>
-        <section id="#schedule">
-            <div class="day monday"></div>
-            <div class="day tuesday"></div>
-            <div class="day thursday"></div>
-            <div class="day wednesday"></div>
-            <div class="day friday"></div>
-            <div class="day saturday"></div>
-            <div class="day sunday"></div>
-        </section>
-    </main>
-    <footer>
-        <p>Copyright © 2022 MoSelf. All Rights Reserved</p>
-    </footer>
-</body>
+    <head>
+        <title>MoSelf</title>
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Roboto:300" rel="stylesheet" />
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+
+    <body>
+        <nav>
+            <img src="images/Logo.svg" alt="MoSelf logo" />
+            <section class="nav-jump-options">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#join">Join</a>
+                <a href="#schedule">Schedule</a>
+            </section>
+        </nav>
+        <header id="home">
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>MoSelf</h1>
+                    <p>Motivate Yourself</p>
+                </div>
+            </section>
+        </header>
+        <main>
+            <article class="about-and-info">
+                <section id="about">
+                    <h2>About Us</h2>
+                    <figure>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            <li>Ipsum dolor sit amet, consectetur adipiscing elit. In.</li>
+                            <li>Consectetur lorem ipsum dolor sit amet.</li>
+                            <li>Sit amet, consectetur adipiscing elit. In.</li>
+                        </ul>
+                        <img src="images/team.jpg" alt="Circle of people placing one of their hands in the center" />
+                    </figure>
+                </section>
+                <section id="why-join">
+                    <h2>Why Join MoSelf?</h2>
+                    <div class="figure-container">
+                        <figure>
+                            <img src="images/Stopwatch_LessBorder.svg" alt="Stopwatch" />
+                            <figcaption>Stay on Track</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/Trophy.svg" alt="Trophy" />
+                            <figcaption>Achieve Your Goals</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/Target.svg" alt="Target with arrow in the center" />
+                            <figcaption>Never Lose Focus</figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </article>
+            <article class="join-and-schedule">
+                <section id="join">
+                    <h2>Join Us</h2>
+                    <p>Username</p>
+                    <div class="input-text-field"></div>
+                    <p>Email</p>
+                    <div class="input-text-field"></div>
+                    <p>Password</p>
+                    <div class="input-text-field"></div>
+                </section>
+                <section id="#schedule">
+                    <div class="day monday">Monday</div>
+                    <div class="day tuesday">Tuesday</div>
+                    <div class="day thursday">thursday</div>
+                    <div class="day wednesday">wednesday</div>
+                    <div class="day friday">friday</div>
+                    <div class="day saturday">saturday</div>
+                    <div class="day sunday">sunday</div>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>Copyright © 2022 MoSelf. All Rights Reserved</p>
+        </footer>
+    </body>
 </html>

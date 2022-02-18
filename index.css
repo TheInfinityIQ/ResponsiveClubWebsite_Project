@@ -1,3 +1,189 @@
+/* 
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+
+    font-family: 'Droid Serif', serif;
+    font-size: 15px;
+*/
+
+/* Color Theme Swatches in Hex */
+.MoSelf-1-hex {
+    color: #0f5c47;
+}
+.MoSelf-2-hex {
+    color: #67e0c0;
+}
+.MoSelf-3-hex {
+    color: #23dbaa;
+}
+.MoSelf-4-hex {
+    color: #2a5c4f;
+}
+.MoSelf-5-hex {
+    color: #1ba883;
+}
+
+/* Universal Styles */
+
 html {
-    
+    font-family: "Droid Serif", serif;
+    font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+}
+
+main {
+    margin: 5rem;
+}
+
+a:hover {
+    font-size: 120%;
+}
+
+a {
+    transition: 0.1s ease-in-out;
+    text-decoration: underline;
+}
+
+/* Grid  Setup*/
+
+main {
+    display: grid;
+    grid-template-rows: 4fr 2fr;
+    row-gap: 3rem;
+}
+
+/* Nav */
+
+nav {
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    background-color: #67e0c0;
+    border-bottom: 0.15rem solid black;
+    row-gap: -6rem;
+    z-index: 1;
+    width: 100%;
+    opacity: 95%;
+}
+
+.nav-jump-options {
+    margin-right: 3rem;
+}
+
+nav img {
+    width: 200px;
+    height: auto;
+    justify-self: start;
+}
+
+nav section {
+    justify-self: end;
+}
+
+/* Header */
+
+.banner {
+    box-shadow: 0 0.35rem 1rem #0f5c47;
+    display: grid;
+    width: 100%;
+    background-image: url("images/NoteBooks.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35rem;
+    margin-bottom: 3rem;
+}
+
+.banner-text {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-text h1 {
+    font-size: 8rem;
+}
+
+.banner-text p {
+    font-style: italic;
+}
+
+figure img {
+    width: 200px;
+    height: auto;
+}
+
+/* About and Join information*/
+
+.about-and-info {
+    display: grid;
+    grid-template: 30rem / 1fr 1fr;
+}
+
+.about-and-info figure{
+    display: inline-flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+#why-join {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    width: 100%;
+    justify-content: center;
+}
+
+#why-join .figure-container {
+    align-self: center;
+}
+
+#why-join img {
+    margin-bottom: 1rem;
+}
+
+#about {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    width: 100%;
+}
+
+#about figure {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#about figure img {
+    border-radius: 1rem;
+}
+
+.about-and-info h2{
+    text-decoration: underline;
+    justify-self: center;
+    align-self: center;
+}
+
+#about figure ul li {
+    line-height: 1.6;
+    margin-right: 4rem;
+}
+
+#about figure ul {
+    list-style-type: disc;
+    padding-left: 2rem;
 }
