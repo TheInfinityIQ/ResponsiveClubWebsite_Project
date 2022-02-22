@@ -99,9 +99,6 @@ nav ul {
     justify-content: space-around;
 }
 
-nav ul li {
-}
-
 /* Hero */
 
 .hero {
@@ -186,9 +183,6 @@ main {
 
 /* Join */
 
-#join .why-join {
-}
-
 #join {
     display: grid;
     grid-template-rows: 1fr 3fr;
@@ -213,10 +207,6 @@ main {
     display: grid; 
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-}
-
-#join .join-container .sign-up {
-    
 }
 
 /* Inside why-join */
