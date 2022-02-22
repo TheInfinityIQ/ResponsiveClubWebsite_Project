@@ -6,7 +6,6 @@
     font-size: 15px;
 */
 
-/* Color Theme Swatches in Hex */
 .MoSelf-1-hex {
     color: #0f5c47;
 }
@@ -22,8 +21,6 @@
 .MoSelf-5-hex {
     color: #1ba883;
 }
-
-/* Universal Styles */
 
 html {
     font-family: "Droid Serif", serif;
@@ -41,149 +38,264 @@ h6 {
 }
 
 main {
-    margin: 5rem;
-}
-
-a:hover {
-    font-size: 120%;
+    margin: 0 5rem;
 }
 
 a {
-    transition: 0.1s ease-in-out;
     text-decoration: underline;
+    transition: 0.1s ease-in-out;
 }
 
-/* Grid  Setup*/
-
-main {
-    display: grid;
-    grid-template-rows: 4fr 2fr;
-    row-gap: 3rem;
+a:hover {
+    font-size: 110%;
 }
 
-/* Nav */
+.check-box {
+    margin-right: 0.25rem;
+}
+
+.data-field:hover {
+    cursor: text;
+}
+
+.check-box:hover {
+    cursor: pointer;
+}
+
+/* NavBar */
 
 nav {
-    position: sticky;
-    top: 0;
-    padding: 1rem;
+    position: fixed;
 
     display: grid;
-    align-items: center;
     grid-template-columns: repeat(2, 1fr);
 
-    background-color: #67e0c0;
-    border-bottom: 0.15rem solid black;
-    row-gap: -6rem;
-    z-index: 1;
     width: 100%;
-    opacity: 95%;
-}
+    padding: 1rem;
 
-.nav-jump-options {
-    margin-right: 3rem;
+    background-color: #67e0c0;
 }
 
 nav img {
-    width: 200px;
-    height: auto;
     justify-self: start;
+    align-self: center;
+    
+    margin-left: 1rem;
+    
+    max-width: 10rem;
+    height: auto;
 }
 
-nav section {
+nav ul {
     justify-self: end;
+    align-items: center;
+
+    margin-right: 1rem;
+
+    width: 15rem;
+    height: auto;
+
+    display: inline-flex;
+    justify-content: space-around;
 }
 
-/* Header */
+nav ul li {
+}
 
-.banner {
-    box-shadow: 0 0.35rem 1rem #0f5c47;
-    display: grid;
+/* Hero */
+
+.hero {
     width: 100%;
+    height: 35rem;
+
     background-image: url("images/NoteBooks.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 35rem;
-    margin-bottom: 3rem;
-}
 
-.banner-text {
-    padding-top: 4rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-}
-
-.banner-text h1 {
-    font-size: 8rem;
-}
-
-.banner-text p {
-    font-style: italic;
-}
-
-figure img {
-    width: 200px;
-    height: auto;
-}
-
-/* About and Join information*/
-
-.about-and-info {
-    display: grid;
-    grid-template: 30rem / 1fr 1fr;
-}
-
-.about-and-info figure{
-    display: inline-flex;
-    flex-direction: column;
-    justify-items: center;
     align-items: center;
 }
 
-#why-join {
+/* Main Grid Setup */
+
+main {
     display: grid;
-    grid-template-rows: 1fr 3fr;
-    width: 100%;
-    justify-content: center;
+    grid-template-rows: 1fr 1fr;
+    /* containers handle columns */
+
+    /* row-gap: 5rem; */
 }
 
-#why-join .figure-container {
-    align-self: center;
-}
+/* About Us */
 
-#why-join img {
-    margin-bottom: 1rem;
-}
-
-#about {
+#about-us {
     display: grid;
-    grid-template-rows: 1fr 3fr;
-    width: 100%;
+    grid-template-rows: 1fr 6fr;
 }
 
-#about figure {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#about figure img {
-    border-radius: 1rem;
-}
-
-.about-and-info h2{
-    text-decoration: underline;
+#about-us h2 {
     justify-self: center;
     align-self: center;
 }
 
-#about figure ul li {
-    line-height: 1.6;
-    margin-right: 4rem;
+#about-us .support-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-#about figure ul {
+#about-us .support-container .support-text {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#about-us .support-container .support-text ul {
     list-style-type: disc;
-    padding-left: 2rem;
+
+    line-height: 1.6;
+
+    justify-self: center;
+    align-self: center;
+}
+
+#about-us .support-container ul .list-title {
+    list-style-type: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+#about-us .support-container .support-text p {
+    line-height: 1.6;
+
+    align-self: flex-start;
+    justify-self: center;
+
+    /* CHECK! May cause problems with resizing due to container size changing. CHECK! */
+    max-width: 50%;
+    min-width: 30%;
+}
+
+#about-us .support-container img {
+    width: 100%;
+    height: auto;
+
+    align-self: center;
+
+    border-radius: 1rem;
+}
+
+/* Join */
+
+#join .why-join {
+}
+
+#join {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+#join h2 {
+    justify-self: center;
+}
+
+#join .join-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#join .why-join {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    justify-items: center;
+}
+
+#join .why-join .row {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+#join .join-container .sign-up {
+    
+}
+
+/* Inside why-join */
+
+#img-medal {
+    width: 10rem;
+    height: auto;
+}
+
+#img-target {
+    width: 10rem;
+    height: auto;
+}
+
+#img-stopwatch {
+    width: 9rem;
+    height: auto;
+}
+
+#join .join-container .why-join p {
+    text-align: center;
+}
+
+#join .figure-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-content: center;
+}
+
+#join .row {
+    justify-content: space-around;
+}
+
+#join .figure-container img {
+    margin-top: 5rem;
+    justify-self: center;
+    text-align: center;
+}
+
+#join .figure-container p {
+    margin-top: 2rem;
+    justify-self: center;
+    text-align: center;
+}
+
+/* Sign Up */
+
+.sign-up {
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    justify-content: center;
+}
+
+.sign-up h2{
+    justify-self: center;
+}
+
+.sign-up .data-field {
+    border: 1px solid black;
+    background-color: white;
+
+    width: 20rem;
+    height: 1.5rem;
+}
+
+.sign-up .check-box {
+    border: 1px solid black;
+    width: 1rem;
+    height: 1rem
+}
+
+.sign-up .text-fields figure {
+    margin: 0.4rem;
+}
+
+.sign-up .check-boxes .figure-inline {
+    display: flex;
+}
+
+.sign-up .check-boxes {
+    margin-top: 1rem;
 }
