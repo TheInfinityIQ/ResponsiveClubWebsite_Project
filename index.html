@@ -2,86 +2,101 @@
 <html lang="en">
     <head>
         <title>MoSelf</title>
-        <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Roboto:300" rel="stylesheet" />
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="index.css" />
     </head>
-
     <body>
-        <nav>
-            <img src="images/Logo.svg" alt="MoSelf logo" />
-            <section class="nav-jump-options">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#join">Join</a>
-                <a href="#schedule">Schedule</a>
-            </section>
-        </nav>
-
-        <header id="home">
-            <section class="banner">
-                <div class="banner-text">
-                    <h1>MoSelf</h1>
-                    <p>Motivate Yourself</p>
-                </div>
+        <header>
+            <nav>
+                <img src="images/Logo.svg" alt="MoSelf Logo" />
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#join">Join</a></li>
+                </ul>
+            </nav>
+            <section class="hero">
+                <h1>MoSelf</h1>
+                <p>Motivate Yourself</p>
             </section>
         </header>
-        
         <main>
-            <article class="about-and-info">
-                <section id="about">
-                    <h2>About Us</h2>
-                    <figure>
+            <article id="about-us">
+                <h2>About Us</h2>
+                <div class="support-container">
+                    <section class="support-text">
                         <ul>
+                            <li class="list-title">Why we are the best</li>
                             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                            <li>Ipsum dolor sit amet, consectetur adipiscing elit. In.</li>
-                            <li>Consectetur lorem ipsum dolor sit amet.</li>
-                            <li>Sit amet, consectetur adipiscing elit. In.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                         </ul>
-                        <img src="images/team.jpg" alt="Circle of people placing one of their hands in the center" />
-                    </figure>
-                </section>
-                <section id="why-join">
-                    <h2>Why Join MoSelf?</h2>
-                    <div class="figure-container">
-                        <figure>
-                            <img src="images/Stopwatch_LessBorder.svg" alt="Stopwatch" />
-                            <figcaption>Stay on Track</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/Trophy.svg" alt="Trophy" />
-                            <figcaption>Achieve Your Goals</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/Target.svg" alt="Target with arrow in the center" />
-                            <figcaption>Never Lose Focus</figcaption>
-                        </figure>
-                    </div>
-                </section>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus leo vel odio laoreet, eget placerat arcu tempus. Nulla porttitor nisi vel ipsum mattis, vel
+                            scelerisque felis volutpat. Ut posuere.
+                        </p>
+                    </section>
+                    <!-- img class unused but I prefer it for clarifcation about he support-text class -->
+                    <img class="support-img" src="images/team.jpg" alt="Circle of people placing one hand in the center of the circle" />
+                </div>
             </article>
-            <article class="join-and-schedule">
-                <section id="join">
-                    <h2>Join Us</h2>
-                    <p>Username</p>
-                    <div class="input-text-field"></div>
-                    <p>Email</p>
-                    <div class="input-text-field"></div>
-                    <p>Password</p>
-                    <div class="input-text-field"></div>
-                </section>
-                <section id="#schedule">
-                    <div class="day monday">Monday</div>
-                    <div class="day tuesday">Tuesday</div>
-                    <div class="day thursday">thursday</div>
-                    <div class="day wednesday">wednesday</div>
-                    <div class="day friday">friday</div>
-                    <div class="day saturday">saturday</div>
-                    <div class="day sunday">sunday</div>
-                </section>
+            <article id="join">
+                <h2>Join the Club!</h2>
+                <div class="join-container">
+                    <section class="why-join">
+                        <h3>Why Join?</h3>
+                        <div class="row">
+                            <figure class="figure-container">
+                                <img src="images/Medal_SmallNeckThing.svg" alt="Medal" id="img-medal">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </figure>
+                            <figure class="figure-container">
+                                <img src="images/Target.svg" alt="Archery target with Arrow in it" id="img-target">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </figure>
+                            <figure class="figure-container">
+                                <img src="images/Stopwatch_BordersSmall.svg" alt="Stopwatch" id="img-stopwatch">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </figure>
+                        </div>
+                    </section>
+                    <section class="sign-up">
+                        <h2>Sign up below!</h2>
+                        <section class="row text-fields">
+                            <figure>
+                                <p>Name</p>
+                                <div class="data-field"></div>
+                            </figure>
+                            <figure>
+                                <p>Email</p>
+                                <div class="data-field"></div>
+                            </figure>
+                            <figure>
+                                <p>Password</p>
+                                <div class="data-field"></div>
+                            </figure>
+                            <figure>
+                                <p>Confirm Password</p>
+                                <div class="data-field"></div>
+                            </figure>
+                            <section class="check-boxes">
+                                <figure class="figure-inline">
+                                    <div class="check-box"></div>
+                                    <p>Agree to our Terms of Service</p>
+                                </figure>
+                                <figure class="figure-inline">
+                                    <div class="check-box"></div>
+                                    <p>Sign up for special offers!</p>
+                                </figure>
+                            </section>
+                        </section>
+                    </section>
+                </div>
             </article>
         </main>
         <footer>
-            <p>Copyright © 2022 MoSelf. All Rights Reserved</p>
+            
         </footer>
     </body>
 </html>
